@@ -6,7 +6,7 @@ A bundler plugin that generates a visual representation of your gem dependencies
 
 ## Installation
 
-While this is a gem, you need to install it as a [Bundler plugin](https://bundler.io/v1.16/guides/bundler_plugins.html):
+While this is a gem, you need to install it as a [Bundler plugin](https://bundler.io/v2.1/guides/bundler_plugins.html):
 
     $ bundler plugin install bundler-visualize
 
@@ -19,9 +19,14 @@ You also need to install [GraphViz](https://www.graphviz.org).
 ## Development
 
 1. Clone the repo
-1. run `rake` to run linter and tests
+2. Run `bundle install`
+3. Run `bundle exec rake spec` to run the linter and tests.
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+To install this Bundler plugin onto your local machine, run `bundle exec rake install` then `bundle plugin install bundle-visualize`.
+
+**NOTE:** As far as I (@duckinator) can tell, there's no way to uninstall Bundler plugins...?
+
+To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
 
 ## Contributing
 
@@ -33,4 +38,4 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Code of Conduct
 
-Everyone interacting in the `bundler-visualize` project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/fatkodima/bundler-visualize/blob/master/CODE_OF_CONDUCT.md).
+Everyone interacting in the `bundler-visualize` project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/rubygems/bundler-viz/blob/master/CODE_OF_CONDUCT.md).
