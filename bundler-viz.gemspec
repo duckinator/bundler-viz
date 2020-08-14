@@ -6,7 +6,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "bundler/visualize/version"
 
 Gem::Specification.new do |spec|
-  spec.name     = "bundler-visualize"
+  spec.name     = "bundler-viz"
   spec.authors  = ["Ellen Dash"]
   spec.email    = ["me@duckie.co"]
 
