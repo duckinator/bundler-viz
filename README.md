@@ -2,7 +2,7 @@
 
 A bundler plugin that generates a visual representation of your gem dependencies.
 
-[![Build Status](https://travis-ci.org/fatkodima/bundler-visualize.svg?branch=master)](https://travis-ci.org/fatkodima/bundler-visualize)
+[![Build Status](https://travis-ci.org/rubygems/bundler-viz.svg?branch=master)](https://travis-ci.org/rubygems/bundler-viz)
 
 ## Installation
 
