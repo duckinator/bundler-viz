@@ -7,12 +7,12 @@ require "bundler/visualize/version"
 
 Gem::Specification.new do |spec|
   spec.name     = "bundler-visualize"
-  spec.authors  = ["fatkodima"]
-  spec.email    = ["fatkodima123@gmail.com"]
+  spec.authors  = ["Ellen Dash"]
+  spec.email    = ["me@duckie.co"]
 
   spec.summary      = "Generate a visual representation of your gem dependencies"
   spec.description  = "A bundler plugin that generates a visual representation of your gem dependencies."
-  spec.homepage     = "https://github.com/fatkodima/bundler-visualize"
+  spec.homepage     = "https://github.com/rubygems/bundler-viz"
   spec.license      = "MIT"
 
   spec.version = Bundler::Visualize::VERSION
@@ -20,14 +20,14 @@ Gem::Specification.new do |spec|
 
   spec.metadata["homepage_uri"] = spec.homepage
   spec.metadata["source_code_uri"] = spec.homepage
-  spec.metadata["changelog_uri"] = "https://github.com/fatkodima/bundler-visualize/CHANGELOG.md"
+  spec.metadata["changelog_uri"] = "https://github.com/rubygems/bundler-viz/CHANGELOG.md"
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
   spec.files = Dir.chdir(File.expand_path(__dir__)) do
     `git ls-files -z`.split("\x0").reject {|f| f.match(%r{^(test|spec|features)/}) }
   end
-  spec.executables   = ["bundler-visualize"]
+  spec.executables   = ["bundler-viz"]
   spec.require_paths = ["lib"]
 
   spec.add_dependency "bundler", "~> 2.0"
